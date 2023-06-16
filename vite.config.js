@@ -11,13 +11,13 @@ export default defineConfig({
             // treat all tags with a dash as custom elements
             isCustomElement: (tag) => tag.includes('-')
           }
-        },
-        resolve: {
-          alias: {
-            'vue': 'vue/dist/vue.esm-bundler.js'
-          }
         }
       }
     )
   ],
+  resolve: {
+    alias: {
+      'vue': 'vue/dist/vue.esm-bundler.js'
+    }
+  }
 })
